@@ -96,7 +96,7 @@ class BookController extends Controller
             $book->title = $request->title ? $request->title : $book->title;
             $book->description = $request->description ? $request->description : $book->description;
             $book->author = $request->author ? $request->author : $book->author;
-            $book->snodepublisher = $request->publisher ? $request->publisher : $book->publisher;
+            $book->publisher = $request->publisher ? $request->publisher : $book->publisher;
             $book->save();
             return response()->json([
                 'status' => 200,
